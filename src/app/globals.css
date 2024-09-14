@@ -49,7 +49,7 @@ nav>div:nth-child(1)>li{
   height: 50px;
   border-radius: 30px;
   margin-right: 10px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 nav>div:nth-child(3){
   width: 10%;
@@ -57,13 +57,13 @@ nav>div:nth-child(3){
 nav>div:nth-child(3)>button{
   border: 1px solid white;
   padding:6px 12px;
-  border-radius: 10px;
+  border-radius: 30px;
   font-size: 18px;
 }
 nav>div:nth-child(3)>button:hover{
   font-weight: 700;
   padding: 6px 10px;
-  background-color: black;
+  background-color: transparent;
 }
 
 /* ! Loading page */
@@ -178,7 +178,7 @@ nav>div:nth-child(3)>button:hover{
   background-color: #f7f7f7;
   padding: 10px 14px;
   border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 #button-category>a:hover{
   background-color: rgb(70, 145, 189);
@@ -336,9 +336,10 @@ nav>div:nth-child(3)>button:hover{
 }
 #logo-div>ul>a>svg{
   margin: 0 7px;
+  fill: white;
 }
 #logo-div>ul>a>svg:hover{
-  fill: white;
+  fill: black;
 }
 .links-info-shops{
   width: 65%;
