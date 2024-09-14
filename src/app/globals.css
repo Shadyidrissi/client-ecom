@@ -381,19 +381,107 @@ nav>div:nth-child(3)>button:hover{
 /* ! details page */
 .product-details{
   height: 100vh;
-  background-color: #3D9FFF;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 #image-show-div{
   width: 35%;
-  background-color: #0F121F;
   height: 100%;
 }
 #details-show-div{
   width: 65%;
   background-color: #f4f5f7;
   height: 100%;
+}
+#image-show-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#show-image{
+  height: 35vh;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+#images-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#images-div>img{
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+}
+#details-show-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#details-show-div>div{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+#details-show-div>div>h1{
+  font-size: 33px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+}
+#color-product{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#color-product>div{
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid black ;
+}
+#description-product{
+  font-size: 19px;
+  margin: 10px 0;
+}
+#price-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#price-product>h2:nth-child(1){
+  border-right: 1px solid black;
+}
+#price-product>h2{
+  padding:10px 15px;
+  font-weight: 600;
+}
+#avalible-product{
+  margin-top: 20px;
+  font-size: 18px;
+  color: brown;
+}
+#button-send{
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 8px 8px;
+  background-color: #3D9FFF;
+  color: white;
+  margin-top: 20px;
+  border: 2px solid transparent;
+}
+#button-send:hover{
+  /* color: #3D9FFF; */
+  font-weight: 700;
+  background-color: #0F121F;
 }
 /* ! END details page */
