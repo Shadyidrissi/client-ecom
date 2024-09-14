@@ -1,0 +1,33 @@
+import React from "react";
+import "../app/globals.css";
+
+function Navbar() {
+  return (
+    <nav>
+      <div>
+        <li>
+          <img id="logo-nav" src="https://i.postimg.cc/68rTSWTm/logo-bego.jpg"alt="" />
+        </li>
+      </div>
+      <div>
+        <li>
+          <a href="">Category</a>
+        </li>
+        <li>
+          <a href="">About US</a>
+        </li>
+        
+        <li>
+          <a href="">Contact US</a>
+        </li>
+      </div>
+      <div>
+        <button>
+            <a href="">Process</a>
+        </button>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
