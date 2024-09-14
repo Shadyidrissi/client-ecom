@@ -72,17 +72,16 @@ export default function Home() {
       </div>
       <div className="list-category">
         <ul id="item-category">
-          <Link href="">between</Link>
-          <Link href="">between</Link>
-          <Link href="">between</Link>
-          <Link href="">between</Link>
+          <Link href="">Computer </Link>
+          <Link href="">Keyborad</Link>
+          <Link href="">Maouse</Link>
         </ul>
         <ul id="button-category">
           <Link href="">See All</Link>
         </ul>
       </div>
-      <Sells/>
-      <Subscribe/>
+      <Sells />
+      <Subscribe />
     </>
   );
 }
