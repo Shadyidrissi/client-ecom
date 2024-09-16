@@ -14,14 +14,14 @@ function Navbar() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="">Category</a>
+          <a href="/category">Category</a>
         </li>
         <li>
-          <a href="">About US</a>
+          <a href="/about">About US</a>
         </li>
         
         <li>
-          <a href="">Contact US</a>
+          <a href="/contact">Contact US</a>
         </li>
       </div>
       <div>

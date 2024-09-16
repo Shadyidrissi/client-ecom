@@ -77,7 +77,7 @@ export default function Home() {
           <Link href="">Maouse</Link>
         </ul>
         <ul id="button-category">
-          <Link href="">See All</Link>
+          <Link href="/category">See All</Link>
         </ul>
       </div>
       <Sells />
