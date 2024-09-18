@@ -61,8 +61,8 @@ function Footer() {
         <div id="shop-div">
           <h1>Links</h1>
           <ul>
-            <li>
-             <a href="/">Home</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/proccess">Proccess</a></li>
             <li><a href="/category">Category</a> </li>
             <li><a href="/">Contact us</a></li>
             <li><a href="/about">About us</a></li>

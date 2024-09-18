@@ -15,6 +15,10 @@ function Sells() {
     { name: "controller", oldP: "", newP: "25$", id: "1", image: "https://target.scene7.com/is/image/Target/GUEST_700a8c05-7925-4054-aabb-d8540636705c?wid=488&hei=488&fmt=pjpeg" },
   ]);
 
+  const valueLink=(value)=>{
+    return value.replace(/\s+/g, '_');
+  }
+
   return (
     <div className="sells-page">
       {items.map((item) => (
@@ -27,7 +31,7 @@ function Sells() {
               </li>
             </div>
             <div id="icons-card">
-              <Link href="">
+              <Link href={`/${valueLink(item.name)}`}>
                 <svg
                   width="30"
                   height="30"

@@ -26,7 +26,7 @@ function Navbar() {
       </div>
       <div>
         <button>
-            <a href="">Process</a>
+            <a href="/proccess">Process</a>
         </button>
       </div>
     </nav>

@@ -353,6 +353,7 @@ nav>div:nth-child(3)>button:hover{
 .links-info-shops{
   width: 65%;
   display: flex;
+  margin-top: 10px;
   justify-content: space-evenly;
   align-items: start;
 }
@@ -496,7 +497,7 @@ nav>div:nth-child(3)>button:hover{
 /* ! END details page */
 /* ! category page */
 .category-page-div{
-  height: 100vh;
+  min-height: 100vh;
 }
 .category-page-div>header{
   height: 30vh;
@@ -556,7 +557,7 @@ nav>div:nth-child(3)>button:hover{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 /* ! END category page */
 /* ! About us page */
@@ -696,3 +697,20 @@ nav>div:nth-child(3)>button:hover{
   font-weight: 700;
 }
 /* ! END contact us page */
+/* ! proccess */
+.proccess-p{
+  width: 80%;
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.proccess-p>h1{
+  margin-bottom: 30px;
+  font-size: 44px;
+}
+.proccess-p>p{
+  font-size: 18px;
+}
+/* ! END proccess */
