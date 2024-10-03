@@ -1,9 +1,26 @@
+"use client";
 import Subscribe from "../components/Subscribe";
 import Sells from "../components/Sells";
-import { SearchInput } from "@patternfly/react-core";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Home() {
+  const [category, setCategory] = useState([]);
+
+  // Corrected useEffect without async directly
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const respons = await axios.get("https://api-ecom-46a3.onrender.com/all_Catrgory");
+        setCategory(respons.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="loading-page-div">
@@ -13,13 +30,13 @@ export default function Home() {
               typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text{" "}
             </h3>
-            <div class="input-container">
+            <div className="input-container">
               <input
                 id="input-loading-page"
                 type="text"
                 placeholder="Type here..."
               />
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
             </div>
           </div>
           <div>
@@ -70,16 +87,22 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Category list rendering */}
       <div className="list-category">
         <ul id="item-category">
-          <Link href="">Computer </Link>
-          <Link href="">Keyborad</Link>
-          <Link href="">Maouse</Link>
+        {category.slice(0, 10).map((item, index) => (
+              <Link key={index} href='/category'>{item.title}</Link>
+          ))}
         </ul>
         <ul id="button-category">
           <Link href="/category">See All</Link>
         </ul>
+        
       </div>
+
+
+      {/* Other components */}
       <Sells />
       <Subscribe />
     </>
