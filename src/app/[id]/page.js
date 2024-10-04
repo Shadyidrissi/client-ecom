@@ -92,7 +92,7 @@ function Page({ params }) {
 
           {/* Display prices */}
           <div id="price-product">
-            <h2>Price: {data.priceWithCounpon}$</h2>
+            <h2>Price: {data.priceWithCounpon ?(data.priceWithCounpon):(data.newPrice)}$</h2>
             <h2>Livraison: 1.5$</h2>
           </div>
 

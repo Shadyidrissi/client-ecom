@@ -119,16 +119,12 @@ function Page() {
                   </h4>
                   <li>
                     {item.priceWithCounpon ? (
-                      <h4 id="old-price">{item.priceWithCounpon}</h4>
-                    ) : (
-                      ""
-                    )}
-                    {item.oldPrice ? (
-                      <h4 id="old-price">{item.oldPrice}</h4>
-                    ) : (
-                      ""
-                    )}{" "}
-                    <h4 id="new-price">{item.newPrice}</h4>
+                      <h4 id="old-price">{item.newPrice}</h4>
+                    ):item.oldPrice ? (<h4 id="old-price">{item.oldPrice}</h4>):("")}
+                    {item.priceWithCounpon ? (
+                      <h4 id="new-price">{item.priceWithCounpon}</h4>
+                    ):(<h4 id="new-price">{item.newPrice}</h4>)}
+                    {/* <h4 id="new-price">{item.newPrice}</h4> */}
                   </li>
                 </div>
                 <div id="icons-card">
